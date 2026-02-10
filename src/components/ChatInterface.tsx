@@ -23,7 +23,7 @@ const mentorConfig: Record<Mentor, { name: string; color: string; icon: any; gre
         name: 'Lord Ram',
         color: 'text-yellow-600 dark:text-yellow-400',
         icon: Shield,
-        greeting: (name) => `Jai Shri Ram, ${name || 'friend'}. The path of righteousness (Dharma) is deeply subtle. How may I assist you in walking it?`
+        greeting: (name) => `Ram Ram, ${name || 'friend'}. The path of righteousness (Dharma) is deeply subtle. How may I assist you in walking it?`
     },
     hanuman: {
         name: 'Lord Hanuman',
@@ -40,10 +40,11 @@ const mentorConfig: Record<Mentor, { name: string; color: string; icon: any; gre
 };
 
 export default function ChatInterface() {
-    const { profile } = useUser();
+    const { profile, updateProfile } = useUser();
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState<Message[]>([]);
     const [isTyping, setIsTyping] = useState(false);
+    const [showMentorSelect, setShowMentorSelect] = useState(false);
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const activeMentor = mentorConfig[profile.mentor] || mentorConfig.krishna;
@@ -99,7 +100,15 @@ export default function ChatInterface() {
         let bestMatch = null;
         let maxScore = 0;
 
-        scriptures.forEach(item => {
+        // Filter scriptures based on mentor
+        const relevantScriptures = scriptures.filter(item => {
+            if (activeMentor.name.includes('Krishna')) return item.source.includes('Gita');
+            if (activeMentor.name.includes('Ram') || activeMentor.name.includes('Hanuman')) return item.source.includes('Ramayan');
+            if (activeMentor.name.includes('Shiva')) return item.source.includes('Shiv Puran');
+            return true;
+        });
+
+        relevantScriptures.forEach(item => {
             let score = 0;
             item.keywords.forEach(keyword => {
                 const lowerKeyword = keyword.toLowerCase();
@@ -148,16 +157,42 @@ export default function ChatInterface() {
         <div className="flex flex-col h-[650px] w-full max-w-4xl mx-auto bg-white/70 dark:bg-gray-900/60 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/40 dark:border-white/10 overflow-hidden ring-1 ring-white/50">
 
             {/* Header */}
-            <div className="p-5 bg-gradient-to-r from-orange-500/10 to-transparent border-b border-orange-200/50 dark:border-orange-900/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
+            <div className="relative p-5 bg-gradient-to-r from-orange-500/10 to-transparent border-b border-orange-200/50 dark:border-orange-900/30 flex items-center justify-between z-20">
+                <div
+                    className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+                    onClick={() => setShowMentorSelect(!showMentorSelect)}
+                >
                     <div className={`w-10 h-10 rounded-full bg-gradient-to-br from-orange-100 to-white flex items-center justify-center shadow-lg border border-orange-200`}>
                         <MentorIcon className={`w-6 h-6 ${activeMentor.color}`} />
                     </div>
                     <div>
-                        <h3 className={`font-bold text-lg ${activeMentor.color}`}>{activeMentor.name}</h3>
+                        <h3 className={`font-bold text-lg ${activeMentor.color} flex items-center gap-2`}>
+                            {activeMentor.name}
+                            <span className="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full border border-orange-200">Change</span>
+                        </h3>
                         <p className="text-xs text-gray-500 font-medium tracking-wide uppercase">AI Spiritual Guide</p>
                     </div>
                 </div>
+
+                {showMentorSelect && (
+                    <div className="absolute top-20 left-5 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-orange-100 dark:border-gray-700 p-2 w-48 animate-in fade-in zoom-in-95 duration-200">
+                        {(Object.keys(mentorConfig) as Mentor[]).map((m) => (
+                            <button
+                                key={m}
+                                onClick={() => {
+                                    updateProfile({ mentor: m });
+                                    setShowMentorSelect(false);
+                                    setMessages([]); // Clear chat on switch to restart with new greeting
+                                }}
+                                className={`w-full text-left px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-2 ${profile.mentor === m ? 'bg-orange-50 text-orange-600' : 'text-gray-600 dark:text-gray-300'}`}
+                            >
+                                <span className={`w-2 h-2 rounded-full ${mentorConfig[m].color.split(' ')[0].replace('text-', 'bg-')}`} />
+                                {mentorConfig[m].name}
+                            </button>
+                        ))}
+                    </div>
+                )}
+
                 <button
                     onClick={() => setMessages([{ role: 'bot', content: activeMentor.greeting(profile.name), timestamp: Date.now() }])}
                     className="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors text-gray-500"

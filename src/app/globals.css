@@ -10,6 +10,18 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
+
+  .spiritual-pattern {
+    background-color: transparent;
+    opacity: 0.4;
+    background-image: radial-gradient(#FF9933 0.5px, transparent 0.5px), radial-gradient(#FF9933 0.5px, #ffffff 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+
+  .dark .spiritual-pattern {
+    background-image: radial-gradient(#FF9933 0.5px, transparent 0.5px), radial-gradient(#FF9933 0.5px, #1a1a1a 0.5px);
+  }
 }
 
 :root {

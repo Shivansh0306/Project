@@ -215,5 +215,229 @@
     "verse": "amānitvam adambhitvam ahiṁsā kṣāntir ārjavam | ācāryopāsanaṁ śaucaṁ sthairyam ātma-vinigrahaḥ ||",
     "translation": "Humility; pridelessness; nonviolence; tolerance; simplicity; approaching a bona fide spiritual master; cleanliness; steadiness; self-control...",
     "guidance": "True strength comes from humility. The tree that bends in the storm survives; the rigid one breaks. Let go of the need to be 'right' or 'superior'."
+  },
+  {
+    "id": "truth_1",
+    "keywords": [
+      "truth",
+      "honesty",
+      "lie",
+      "deciet",
+      "dharma"
+    ],
+    "source": "Ramayan",
+    "verse": "Satyameva Jayate Nanritam",
+    "translation": "Truth alone triumphs; not falsehood.",
+    "guidance": "Adhering to truth (Satya) is the highest Dharma. Even in the face of adversity, standing by the truth builds an unshakeable character."
+  },
+  {
+    "id": "duty_ram_1",
+    "keywords": [
+      "duty",
+      "father",
+      "promise",
+      "honor",
+      "sacrifice"
+    ],
+    "source": "Ramayan",
+    "verse": "Raghukul Reet Sada Chali Aayi, Pran Jaye Par Vachan Na Jayi",
+    "translation": "It is the tradition of the Raghukul lineage: One may lose their life, but never break a promise.",
+    "guidance": "Your word is your bond. Fulfilling your responsibilities and honoring your commitments, even at personal cost, is the mark of a noble soul."
+  },
+  {
+    "id": "love_ram_1",
+    "keywords": [
+      "love",
+      "devotion",
+      "brother",
+      "loyalty",
+      "family"
+    ],
+    "source": "Ramayan",
+    "verse": "Janani Janmabhoomischa Swargadapi Gariyasi",
+    "translation": "Mother and motherland are superior even to Heaven.",
+    "guidance": "Respect and love for your roots, your family, and your community is the foundation of a meaningful life. Service to them is service to the Divine."
+  },
+  {
+    "id": "dharma_ram_1",
+    "keywords": [
+      "dharma",
+      "righteousness",
+      "path",
+      "virtue",
+      "ethics"
+    ],
+    "source": "Valmiki Ramayana",
+    "verse": "Dharmo Rakshati Rakshitah",
+    "translation": "Dharma protects those who protect it.",
+    "guidance": "Upholding what is right, even when difficult, ensures that the universe itself supports you. Your integrity is your greatest shield."
+  },
+  {
+    "id": "adversity_ram_1",
+    "keywords": [
+      "hardship",
+      "exile",
+      "forest",
+      "tough",
+      "bad luck"
+    ],
+    "source": "Valmiki Ramayana",
+    "verse": "Na duhkham panca varshani dasa varshani va punah |",
+    "translation": "Sorrow does not last forever; endure it with grace as I endured fourteen years of exile.",
+    "guidance": "Adversity is a temporary phase in the grand journey of life. Face it with the dignity of a king in exile, knowing that your return to glory is certain."
+  },
+  {
+    "id": "strength_hanuman_1",
+    "keywords": [
+      "strength",
+      "power",
+      "potential",
+      "doubt",
+      "self-belief"
+    ],
+    "source": "Ramayana (Sundara Kanda)",
+    "verse": "Atulita Baladhamam Hemashailabha Deham",
+    "translation": "You are the repository of immeasurable strength, with a body shining like a golden mountain.",
+    "guidance": "You often forget your own potential, just as Hanuman did. You need only to be reminded of who you are. The power to leap oceans lies within you."
+  },
+  {
+    "id": "victory_mahabharata_1",
+    "keywords": [
+      "victory",
+      "winning",
+      "success",
+      "conquer",
+      "battle"
+    ],
+    "source": "Mahabharata",
+    "verse": "Yato Dharmas Tato Jayah",
+    "translation": "Where there is Dharma (Righteousness), there is Victory.",
+    "guidance": "True victory is not just defeating an enemy, but aligning yourself with the truth. If your cause is just, the universe will conspire for your success."
+  },
+  {
+    "id": "forgiveness_mahabharata_1",
+    "keywords": [
+      "forgive",
+      "revenge",
+      "anger",
+      "calm",
+      "peace"
+    ],
+    "source": "Mahabharata (Vidura Niti)",
+    "verse": "Kshama Vashikritir Loke",
+    "translation": "Forgiveness is the greatest power in the world.",
+    "guidance": "Holding onto anger burns you, not the offender. Forgiveness is not weakness; it is the ultimate weapon of the strong to reclaim their peace."
+  },
+  {
+    "id": "karma_mahabharata_1",
+    "keywords": [
+      "karma",
+      "action",
+      "consequence",
+      "destiny",
+      "fate"
+    ],
+    "source": "Mahabharata",
+    "verse": "Avashyam Eva Bhoktavyam Kritam Karma Shubhashubham",
+    "translation": "One must inevitably suffer or enjoy the consequences of one's actions, whether good or bad.",
+    "guidance": "Every action is a seed you plant. Do not be surprised by the harvest. Plant seeds of kindness and truth today to enjoy a garden of peace tomorrow."
+  },
+  {
+    "id": "greed_mahabharata_1",
+    "keywords": [
+      "greed",
+      "money",
+      "wealth",
+      "desire",
+      "more"
+    ],
+    "source": "Mahabharata",
+    "verse": "Lobhah Papasya Karanam",
+    "translation": "Greed is the root of all sin.",
+    "guidance": "The desire for 'more' is a bottomless pit. True wealth is contentment. Identify when need turns into greed, for that is where suffering begins."
+  },
+  {
+    "id": "time_shiv_1",
+    "keywords": [
+      "time",
+      "patience",
+      "waiting",
+      "kala",
+      "destroyer"
+    ],
+    "source": "Shiv Puran",
+    "verse": "Kalo Jagat Bhakshaka",
+    "translation": "Time devours the world.",
+    "guidance": "Time is the ultimate leveller. Kings and paupers alike bow to it. Do not waste this precious resource on petty quarrels. Use it to realize the eternal."
+  },
+  {
+    "id": "silence_shiv_1",
+    "keywords": [
+      "silence",
+      "quiet",
+      "speak",
+      "listen",
+      "noise"
+    ],
+    "source": "Shiv Puran",
+    "verse": "Maunam Sarvartha Sadhanam",
+    "translation": "Silence accomplishes all things.",
+    "guidance": "In a noisy world, silence is power. Shiva sits in silence on Kailash, holding the universe together. Find your silence to find your strength."
+  },
+  {
+    "id": "patience_ram_1",
+    "keywords": [
+      "patience",
+      "waiting",
+      "faith",
+      "time",
+      "struggle"
+    ],
+    "source": "Ramayan",
+    "verse": "Dheeraj Dharam Mitra Aru Nari, Apat Kaal Parakhiye Chari",
+    "translation": "Patience, Dharma, a friend, and a wife are tested only during times of adversity.",
+    "guidance": "Do not lose heart in tough times. It is the fire of adversity that tests and purifies your character. Have patience; this too shall pass."
+  },
+  {
+    "id": "meditation_shiv_1",
+    "keywords": [
+      "meditation",
+      "focus",
+      "mind",
+      "calm",
+      "stillness"
+    ],
+    "source": "Shiv Puran",
+    "verse": "Mana Eva Manushyanam Karanam Bandha Mokshayoh",
+    "translation": "The mind alone is the cause of bondage and liberation for human beings.",
+    "guidance": "Your reality is shaped by your mind. Master your mind through meditation and detachment, and you will find liberation from suffering."
+  },
+  {
+    "id": "detachment_shiv_1",
+    "keywords": [
+      "loss",
+      "attachment",
+      "change",
+      "impermanence",
+      "death"
+    ],
+    "source": "Shiv Puran",
+    "verse": "Mrityunjaya Mantra (Om Tryambakam Yajamahe...)",
+    "translation": "Change is the only constant. Destruction is merely the precursor to new creation.",
+    "guidance": "Do not fear endings. Like Shiva's dance, life is a cycle of creation and destruction. Let go of what is leaving to make space for what is coming."
+  },
+  {
+    "id": "simplicity_shiv_1",
+    "keywords": [
+      "simple",
+      "materialism",
+      "greed",
+      "minimalism",
+      "content"
+    ],
+    "source": "Shiv Puran",
+    "verse": "Chidananda Rupah Shivoham Shivoham",
+    "translation": "I am Consciousness and Bliss. I am Shiva, I am Shiva.",
+    "guidance": "You need nothing external to be complete. Your true nature is pure bliss and consciousness. Strip away the layers of ego and material desire to find the jewel within."
   }
 ]
