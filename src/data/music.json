@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "mood": "Peace",
+        "title": "Om Chanting",
+        "url": "https://www.youtube.com/embed/vH11D-3S6oI",
+        "type": "Mantra"
+    },
+    {
+        "id": "2",
+        "mood": "Devotion",
+        "title": "Achyutam Keshavam",
+        "url": "https://www.youtube.com/embed/-JzSswr6wXw",
+        "type": "Bhajan"
+    },
+    {
+        "id": "3",
+        "mood": "Focus",
+        "title": "Flute Meditation",
+        "url": "https://www.youtube.com/embed/lWeuyfwXvKw",
+        "type": "Instrumental"
+    },
+    {
+        "id": "4",
+        "mood": "Strength",
+        "title": "Shiv Tandav Stotram",
+        "url": "https://www.youtube.com/embed/sK9kMhMhJ5U",
+        "type": "Stotram"
+    },
+    {
+        "id": "5",
+        "mood": "Relaxation",
+        "title": "Rain & Flute",
+        "url": "https://www.youtube.com/embed/9GzRkZgT1fA",
+        "type": "Ambient"
+    }
+]
